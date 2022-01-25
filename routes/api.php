@@ -8,6 +8,7 @@ use App\Http\Controllers\FollowerController;
 use App\Http\Controllers\ImageUploadController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\CommentController;
+use App\Http\Controllers\SocialShareButtonsController;
 
 
   
@@ -46,3 +47,5 @@ Route::get('/posts/{post}', 'PostController@show');
 
 Route::get('/comments', 'CommentController@index');
 Route::post('/posts/{post}/comment', 'CommentController@store');
+
+Route::get('/social-media-share', [SocialShareButtonsController::class,'ShareWidget']);
