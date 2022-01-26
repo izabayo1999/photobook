@@ -41,7 +41,7 @@ Route::group(['middleware' => ['auth:api']], function () {
     Route::post('/post', 'PostController@store');
 });
 
-Route::get('/posts', 'PostController@index');
+Route::get('/posts', 'App\Http\Controllers\PostController@index');
 Route::get('/posts/top-five', 'PostController@indexTopFive');
 Route::get('/posts/{post}', 'PostController@show');
 
