@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\SocialShareButtonsController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +15,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('share');
-});
+// Route::get('/', function () {
+//     return view('posts');
+// });
+
+Route::get('/', [SocialShareButtonsController::class,'ShareWidget']);

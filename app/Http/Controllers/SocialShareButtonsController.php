@@ -19,7 +19,7 @@ class SocialShareButtonsController extends Controller
         ->whatsapp()        
         ->reddit();
         
-        return view('share', compact('shareComponent'));
+        return view('posts', compact('shareComponent'));
     }
     
 }
