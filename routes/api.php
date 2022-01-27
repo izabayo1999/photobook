@@ -33,7 +33,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::get('follower', 'App\Http\Controllers\FollowerController@follow')->name('follower');
 Route::get('unfollow', 'App\Http\Controllers\FollowerController@unfollower')->name('unfollower');
 
-Route::get('image-upload', [ ImageUploadController::class, 'imageUpload' ])->name('image.upload');
+Route::get('upload', [ ImageUploadController::class, 'imageUpload' ])->name('image.upload');
 Route::post('image-upload', [ ImageUploadController::class, 'imageUploadPost' ])->name('image.upload.post');
 
 Route::group(['middleware' => ['auth:api']], function () {
