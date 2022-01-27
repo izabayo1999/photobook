@@ -11,10 +11,10 @@ class ImageUploadController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function imageUpload()
-    {
-        return view('imageUpload');
-    }
+    //public function imageUpload()
+    //{
+       // return view('imageUpload');
+   // }
     
     /**
      * Display a listing of the resource.
